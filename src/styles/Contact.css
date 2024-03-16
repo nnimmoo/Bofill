@@ -1,0 +1,225 @@
+.contact-header-part {
+  font-family: SimpleMichael;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: 20px;
+  transition: transform .7s ease-in-out;
+}
+
+.show {
+  top: 0;
+}
+
+.hide {
+  top: -100px;
+  /* Adjust based on the header's height */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  top: 130px;
+  width: 100%;
+}
+
+.contact h1,
+.contact h2,
+.contact h3 {
+  font-family: SimpleMichael;
+}
+
+.contact a {
+  font-family: Montserrat;
+}
+
+.contact h1 {
+  margin-bottom: 10px;
+  font-size: 4em;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  font-size: 3em;
+}
+
+.contact h3 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 380px;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+}
+
+.contact-main div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.contact-main div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-main div:first-of-type p {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  align-items: flex-end;
+}
+
+.contact-main div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-right: 150px;
+  font-family: Montserrat;
+}
+
+.contact-main div:last-of-type p {
+  font-family: Montserrat;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.contact-main div:last-of-type a {
+  font-size: 1.2em;
+}
+
+.contact-main div:last-of-type a::before {
+  content: '';
+  /* This is necessary for the pseudo-element to work */
+  display: inline-block;
+  width: 10px;
+  /* Adjust the size of the square as needed */
+  height: 10px;
+  background-color: black;
+  margin-right: 5px;
+  /* Adjust the space between the square and the link text */
+}
+
+.contact-image-divider {
+  width: 90%;
+  position: relative;
+}
+
+.contact-career {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  margin-top: 50px;
+}
+
+.contact-career a {
+  font-size: 2em;
+}
+
+.contact .email p {
+  margin: 10px 0;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-social a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+
+}
+
+.contact a {
+  padding: 5px 10px 2px 10px;
+  margin: 6px;
+  background-image: linear-gradient(#000 0 0);
+  background-position: 0 100%;
+
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.contact a:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+  font-weight: bold;
+
+}
+
+.contact-office {
+  /* border-bottom: 1px solid black; */
+  border-top: 1px solid black;
+  width: 90%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.contact-office div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.contact-office span {
+  font-family: Montserrat;
+  font-size: 1.5em;
+}
+
+.contact-office h1 {
+  font-size: 6em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.contact-office p {
+  padding: 5px 10px 2px 10px;
+  margin: 6px;
+  font-family: Montserrat;
+  font-size: 2em;
+}
+
+.contact-office a {
+  font-size: 2em;
+}
+
+.contact-office img {
+  width: 300px;
+  height: 220px;
+}

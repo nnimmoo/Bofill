@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Kamos';
+  src: url("./assets/fonts/kamos-grandios.otf");
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: 'MontserratItalic';
+  src: url("./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'SimpleMichaelItalic';
+  src: url("./assets/fonts/Simple-Michael-Italic-BF64afaec66f5ab.otf");
+}
+@font-face {
+  font-family: 'SimpleMichael';
+  src: url("./assets/fonts/Simple-Michael-BF64afaec696d5c.otf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.app {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0;
+  position: absolute;
+  top: 0;
+}
+
+.section {
+  width: 100% !important;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.-intro {
+  background-image: url("./assets/images/Roja-06.jpg");
+  height: 105vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: SimpleMichaelItalic;
   color: white;
+  font-size: 5vw;
 }
 
-.App-link {
-  color: #61dafb;
+.-intro h1 {
+  margin-left: 70px;
+  margin-top: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 60%;
 }
+
+.text-container h3 {
+  font-family: SimpleMichael;
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 24px;
+  font-family: MontserratItalic;
+  width:100%;
+  text-align: justify;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #333;
+}
+
+.text-container img {
+  width: 200px;
+  height: auto;
+  margin-left: 25%;
+}
+.portrait {
+  width: 400px;
+  height: auto;
+
+  position: absolute;
+  right:40px;
+
+}
+
+
+.-projects {
+  padding: 20px;
+}
+
+.-projects h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
