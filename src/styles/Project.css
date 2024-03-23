@@ -105,11 +105,12 @@ html {
 }
 
 .project-details {
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  left: 10px;
-  right: 5px;
+  left: calc(50% - 35%);
+  right: calc(50% - 35%);
   height: 50vh;
+  width: 70%;
   background-color: #fff;
   color: #000000;
   padding: 20px;
@@ -117,6 +118,9 @@ html {
   border: 1px solid black;
   transform: translateY(100%);
   transition: transform 0.8s ease-in-out;
+  font-family: Montserrat;
+  text-align: justify;
+
 }
 
 .project-details.show {

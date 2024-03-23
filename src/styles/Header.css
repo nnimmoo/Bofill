@@ -5,10 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: transparent;
     transition: top 0.3s;
     z-index: 1000;
+    font-family: SimpleMichael;
+    width: calc(50% + 30px);
+    font-size: 20px;
 }
 
 .header img {

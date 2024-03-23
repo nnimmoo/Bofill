@@ -3,7 +3,7 @@ import '../styles/Contact.css';
 import pic from "../assets/images/Fabrica-04.jpg";
 import fabrica from "../assets/images/Fabrica-01.jpg";
 import Footer from '../components/Footer';
-
+import ScrollingImage from '../components/ScrollingImage';
 function Contact() {
   const [currentTime, setCurrentTime] = useState('');
 
@@ -55,12 +55,9 @@ function Contact() {
 
   return (
     <>
-      <div className={`contact-header-part  ${show ? 'show' : 'hide'}`}>
-        <h1>Bofill</h1>
-      </div>
-
       <div className="contact">
         <div className='contact-main'>
+          
           <div>
             <h1>INTERESTED IN <br />
               RICARDO BOFILL <br /> TALLER DE ARQUITECTURA?</h1>
@@ -73,15 +70,23 @@ function Contact() {
             <a href="mailto:business@bofill.com">business@bofill.com</a>
           </div>
         </div>
-        <img src={pic} className='contact-image-divider' />
+        <div  style={{ width: "100%", height: "800px" }}>
+          <ScrollingImage
+            src={pic}
+            alt="Your Alt Text"
+            scrollSpeed={0.2}
+          />
+        </div>
+
+        {/* <img src={pic} className='contact-image-divider' /> */}
         <div className='contact-career'>
           <h2>LOOKING FOR A NEW LIFE IN OUR COMPANY?</h2>
           <a href="mailto:careers@bofill.com">careers@bofill.com</a>
         </div>
         <div className="contact-social">
           <h2>VISIT US ON SOCIAL MEDIA!</h2>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/bofillarquitectura/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/RicardoBofillTallerDeArquitectura" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
         <div className='contact-office'>
           <div>
@@ -101,6 +106,8 @@ function Contact() {
 
         </div>
       </div>
+      <Footer />
+
     </>
   );
 }

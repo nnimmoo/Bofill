@@ -2,10 +2,12 @@
   font-family: 'Kamos';
   src: url("./assets/fonts/kamos-grandios.otf");
 }
+
 @font-face {
   font-family: 'Montserrat';
   src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
+
 @font-face {
   font-family: 'MontserratItalic';
   src: url("./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf");
@@ -15,6 +17,7 @@
   font-family: 'SimpleMichaelItalic';
   src: url("./assets/fonts/Simple-Michael-Italic-BF64afaec66f5ab.otf");
 }
+
 @font-face {
   font-family: 'SimpleMichael';
   src: url("./assets/fonts/Simple-Michael-BF64afaec696d5c.otf");
@@ -25,8 +28,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
 
+}
 
 .app {
   margin: 0;
@@ -39,79 +42,175 @@ body {
   gap: 0;
   position: absolute;
   top: 0;
+  width: 100%;
 }
+
+.-divider {
+  width: 100%;
+  border: 5px solid black;
+}
+
 
 .section {
   width: 100% !important;
-  min-height: 100vh;
   max-height: fit-content;
 }
 
 .-intro {
-  background-image: url("./assets/images/Roja-06.jpg");
-  height: 105vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: SimpleMichaelItalic;
-  color: white;
-  font-size: 5vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0;
+
 }
 
 .-intro h1 {
-  margin-left: 70px;
-  margin-top: 200px;
-}
-
-
-.text-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 60px;
-  width: 60%;
-}
-
-.text-container h3 {
+  font-size: 10rem;
+  margin-bottom: 0;
   font-family: SimpleMichael;
-  font-size: 48px;
+}
+
+.-intro p {
+  font-family: Montserrat;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.-intro-image {
+  width: 100%;
+  height: 900px;
+}
+
+.-about {
+  background-color: black;
+  color: white;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-start; */
+  justify-content: space-between;
+}
+
+.-about button {
+  right: 0;
+}
+
+.-about-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.-about hr {
+  width: 100%;
+}
+
+.-about-header {
+  font-family: SimpleMichael;
+  font-size: 42px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #333;
 }
 
-.text-container p {
+.-about-content p:first-of-type {
   font-size: 24px;
-  font-family: MontserratItalic;
-  width:100%;
+  font-family: Montserrat;
+  width: 90%;
   text-align: justify;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 400;
-  color: #333;
 }
 
-.text-container img {
-  width: 200px;
-  height: auto;
-  margin-left: 25%;
+.-about-content p:last-of-type {
+  font-size: 14px;
+  font-family: Montserrat;
+  width: 60%;
+  /* text-align: justify; */
+  margin-bottom: 10px;
+  font-weight: 400;
 }
-.portrait {
-  width: 400px;
-  height: auto;
 
-  position: absolute;
-  right:40px;
-
-}
 
 
 .-projects {
   padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 80px;
+  margin-bottom: 100px;
 }
 
-.-projects h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #333;
+.-projects-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
+.-projects-header h3 {
+  font-size: 42px;
+  font-family: SimpleMichael;
+  margin-bottom: 0;
+}
+
+.-projects-header p {
+  margin-top: 0;
+  font-size: 20px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+
+.-projects-featured {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+.-contact {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.-contact-image {
+  width: 30%;
+  height: 90%;
+}
+
+.-contact-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.-contact-content h3 {
+  font-family: SimpleMichael;
+  font-size: 48px;
+}
+
+.-contact-content p {
+  font-family: Montserrat;
+  font-size: 16px;
+  width: 40%;
+}
+
+
+.-contact-content hr {
+  margin-top: 100px;
+  width: 100%;
+  border: 1px solid black;
+}

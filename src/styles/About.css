@@ -1,0 +1,101 @@
+.about-container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: absolute;
+    top: 100px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.about-left {
+    width: 35%;
+    height: 90%;
+    margin-left: 8vw;
+    display: flex;
+    align-items: center;
+}
+
+.about-left img {
+    height: 100%;
+}
+
+/* Existing CSS */
+.about-right {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.about-right-text {
+    height: 90%;
+    overflow-y: auto;
+    text-align: justify;
+    margin-right: 8vw;
+    font-family: Montserrat;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.about-right-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-right-content p {
+    width: 80%;
+    margin-top: 0;
+}
+
+.about-right-title {
+   margin-top: 0px;
+    width: 10%;
+}
+
+/* New CSS */
+.scroll-indicator {
+    width: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll-indicator .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-top: 5px;
+}
+
+.scroll-indicator.down .arrow {
+    border-top: 5px solid black;
+}
+
+.scroll-indicator.up .arrow {
+    border-bottom: 5px solid black;
+}
+
+@media screen and (max-width: 840px) {
+    .about-left img {
+        height: 50vw;
+    }
+}

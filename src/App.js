@@ -7,8 +7,13 @@ import Menu from './components/Menu';
 import Projects from './pages/Projects';
 import Submission from './pages/Submission';
 import Project from './pages/Project';
-import { Practice } from './pages/Practice';
-import { About } from './pages/About';
+import Practice from './pages/Practice';
+import About from './pages/About';
+import { Credits } from './pages/Credits';
+import { Test } from './pages/test';
+import  { useState, useEffect } from 'react';
+import Preloader from './components/Preloader';
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -22,15 +27,25 @@ const router = createBrowserRouter([
             { path: '/about', element: <About /> },
             { path: '/practice', element: <Practice /> },
             { path: '/submission', element: <Submission /> },
+            { path: '/credits', element: <Credits /> },
+            { path: '/test', element: <Test /> },
             // Other routes...
         ],
     },
 ]);
 
 function App() {
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        // Simulate loading data
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 3000); // 3 seconds
+    }, []);
+
     return (
         <div className='app'>
-            <RouterProvider router={router} />
+            {isLoading ? <Preloader /> : <RouterProvider router={router} />}
         </div>
     );
 }

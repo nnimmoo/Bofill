@@ -1,0 +1,150 @@
+.practice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    width: 100%;
+    position: relative;
+    height: fit-content;
+
+}
+
+.practice button {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    color: #222;
+    font-size: 1rem;
+    background-color: rgba(239, 239, 239, 0);
+    border: 1px solid #000;
+    border-radius: 100rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.practice h2 {
+    font-size: 2.6rem;
+    font-family: SimpleMichael;
+}
+
+.practice h4 {
+    font-size: 6rem;
+    font-family: SimpleMichael;
+    margin: 0;
+}
+
+.practice h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.practice p {
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    text-align: justify;
+
+}
+
+.practice-part {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.practice-content {
+    flex: 1;
+}
+
+.practice-image {
+    width: 100%;
+    height: 400px;
+}
+
+.practice-intro {
+    background-image: url("../assets/images/wall-7.webp");
+    width: 100%;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+.practice-intro div {
+    width: 40%;
+    padding: 20px;
+}
+
+.practice-projects {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.practice-projects-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.practice-projects-count {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    border-top: 1px solid black;
+    width: 15%;
+}
+
+.practice-projects-text {
+    width: 35%;
+}
+
+.practice-projects-text img {
+    width: 100%;
+}
+
+.practice-projects-text p {
+    width: 100%;
+}
+
+.practice-projects-image {
+    width: 50%;
+}
+
+.practice-projects-image img {
+    width: 100%;
+}
+.practice-outro{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+.practice-outro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.practice-outro-text {
+    width: 48%;
+    border-top: 1px solid black;
+}
+.world-map {
+    width: 100%;
+    /* Adjust the size of the map as needed */
+    max-width: 600px;
+    /* Adjust the maximum width of the map as needed */
+}

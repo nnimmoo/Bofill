@@ -1,30 +1,11 @@
-.contact-header-part {
-  font-family: SimpleMichael;
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  font-size: 20px;
-  transition: transform .7s ease-in-out;
-}
-
-.show {
-  top: 0;
-}
-
-.hide {
-  top: -100px;
-  /* Adjust based on the header's height */
-}
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
-  top: 130px;
+  margin-top: 100px;
+  top: 180px;
   width: 100%;
 }
 
@@ -40,7 +21,7 @@
 
 .contact h1 {
   margin-bottom: 10px;
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 .contact h2 {
@@ -60,7 +41,6 @@
 .contact-main {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   height: 380px;
   width: 90%;
   justify-content: space-between;
@@ -203,7 +183,7 @@
 }
 
 .contact-office h1 {
-  font-size: 6em;
+  font-size: 6rem;
   margin-top: 0;
   padding-top: 0;
 }
@@ -212,7 +192,7 @@
   padding: 5px 10px 2px 10px;
   margin: 6px;
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .contact-office a {

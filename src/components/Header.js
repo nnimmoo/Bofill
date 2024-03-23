@@ -26,6 +26,9 @@ function Header() {
 
   return (
     <div className={`header ${show ? 'show' : 'hide'}`}>
+      <Link to={"/"}>
+        <h1>Bofill</h1>
+      </Link>
       <Link to={"/menu"}>
         <img src={menuLogo} alt="Menu Symbol" />
       </Link>

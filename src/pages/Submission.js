@@ -6,10 +6,11 @@ function Submission(props) {
     console.log(AUTH)
     const [formData, setFormData] = useState({
         name: '',
-        imageLinks: [''], // Initialize as an array with an empty string
-        dateOfCreation: '',
+        imageLinks: [''],
+        dateOfCreation: '', // Change this to a number if you want to enforce numerical input
         location: '',
-        shortBio: ''
+        shortBio: '',
+        tags: [''] // Initialize tags as an array with an empty string
     });
 
     const handleImageLinkChange = (index, value) => {
@@ -42,6 +43,30 @@ function Submission(props) {
         setFormData({
             ...formData,
             [name]: value
+        });
+    };
+    const handleTagChange = (index, value) => {
+        const updatedTags = [...formData.tags];
+        updatedTags[index] = value;
+        setFormData({
+            ...formData,
+            tags: updatedTags
+        });
+    };
+
+    const addTagInput = () => {
+        setFormData({
+            ...formData,
+            tags: [...formData.tags, '']
+        });
+    };
+
+    const removeTagInput = (index) => {
+        const updatedTags = [...formData.tags];
+        updatedTags.splice(index, 1);
+        setFormData({
+            ...formData,
+            tags: updatedTags
         });
     };
 
@@ -103,6 +128,23 @@ function Submission(props) {
                     <textarea name="shortBio" value={formData.shortBio} onChange={handleChange} />
                 </label>
                 <br />
+                <label>
+    Tags:
+    {formData.tags.map((tag, index) => (
+        <div key={index}>
+            <input
+                type="text"
+                name={`tag-${index}`}
+                value={tag}
+                onChange={(e) => handleTagChange(index, e.target.value)}
+            />
+            <button type="button" onClick={() => removeTagInput(index)}>-</button>
+        </div>
+    ))}
+    <button type="button" onClick={addTagInput}>Add Tag</button>
+</label>
+<br />
+
                 <button type="submit">Submit</button>
             </form>
         </div>

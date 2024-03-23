@@ -1,0 +1,17 @@
+.scrolling-image-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.scrolling-image-container img {
+    position: absolute;
+    bottom: 0;
+    /* Align the bottom of the image with the bottom of the container */
+    /* transform: translateX(-50%); */
+    width: 100%;
+    /* Adjust the width of the image as needed */
+    height: auto;
+    /* Adjust the height of the image as needed */
+}
