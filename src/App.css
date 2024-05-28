@@ -23,6 +23,9 @@
   src: url("./assets/fonts/Simple-Michael-BF64afaec696d5c.otf");
 }
 
+:root{
+ 
+}
 
 html,
 body {
@@ -57,7 +60,7 @@ body {
 }
 
 .-intro {
-  height: 70vh;
+  height: 75vh;
   display: flex;
   align-items: center;
 
@@ -68,9 +71,11 @@ body {
 }
 
 .-intro h1 {
+  width: 100%;
   font-size: 10rem;
   margin-bottom: 0;
   font-family: SimpleMichael;
+  text-align: center;
 }
 
 .-intro p {
@@ -141,7 +146,7 @@ body {
 
 .-projects {
   padding: 20px;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

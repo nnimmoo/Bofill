@@ -13,6 +13,7 @@ import { Credits } from './pages/Credits';
 import { Test } from './pages/test';
 import  { useState, useEffect } from 'react';
 import Preloader from './components/Preloader';
+import 'animate.css'
 
 const router = createBrowserRouter([
     {
@@ -37,10 +38,9 @@ const router = createBrowserRouter([
 function App() {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        // Simulate loading data
         setTimeout(() => {
             setIsLoading(false);
-        }, 3000); // 3 seconds
+        }, 3500);
     }, []);
 
     return (

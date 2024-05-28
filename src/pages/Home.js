@@ -7,6 +7,7 @@ import Button from "../components/Button";
 import Footer from '../components/Footer';
 import ScrollingImage from "../components/ScrollingImage";
 import { Link } from "react-router-dom";
+import Animate from 'animate.css-react'
 
 function Home() {
     const AUTH = process.env.REACT_APP_AUTH;
@@ -50,7 +51,8 @@ function Home() {
         <div className='home'>
 
             <section className='section -intro'>
-                <h1>STORY OF A NOMAD</h1>
+          
+                    <h1>STORY OF A NOMAD</h1> 
                 <p>Barcelona, Spain</p>
             </section>
             <div className='-intro-image'>
@@ -65,13 +67,13 @@ function Home() {
                     <p>
                         Ricardo Bofill was a renowned Spanish architect known for his innovative and diverse architectural designs that spanned over half a century. He founded Ricardo Bofill Taller de Arquitectura in 1963, which became famous for projects like Walden 7 and La Muralla Roja, characterized by their bold colors and geometric forms.
                     </p>
-                    <Button text="About Bofill" link="about" color="light" />
+                    <Button text="About Bofill" link="about" />
 
                     <hr />
                     <p>
                         He founded Ricardo Bofill Taller de Arquitectura in 1963, which became famous for projects like Walden 7 and La Muralla Roja, characterized by their bold colors and geometric forms.
                     </p>
-                    <Button text="About RBTA" link="practice" color="light" />
+                    <Button text="About RBTA" link="practice" />
 
 
                 </div>
