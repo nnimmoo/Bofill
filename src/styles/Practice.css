@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 20px; */
     width: 100%;
     position: relative;
     height: fit-content;
-
 }
 
 .practice button {
@@ -21,7 +19,6 @@
     display: flex;
     position: relative;
     overflow: hidden;
-
 }
 
 .practice h2 {
@@ -44,7 +41,6 @@
     font-family: Montserrat;
     font-size: 1.3rem;
     text-align: justify;
-
 }
 
 .practice-part {
@@ -87,7 +83,6 @@
     flex-direction: column;
     align-items: center;
     padding: 40px;
-
 }
 
 .practice-projects-content {
@@ -125,26 +120,140 @@
 .practice-projects-image img {
     width: 100%;
 }
-.practice-outro{
+
+.practice-outro {
     padding: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
+
 .practice-outro-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .practice-outro-text {
     width: 48%;
     border-top: 1px solid black;
 }
-.world-map {
-    width: 100%;
-    /* Adjust the size of the map as needed */
-    max-width: 600px;
-    /* Adjust the maximum width of the map as needed */
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .practice h2 {
+        font-size: 2.2rem;
+    }
+
+    .practice h4 {
+        font-size: 4rem;
+    }
+
+    .practice p {
+        font-size: 1.1rem;
+    }
+
+    .practice-intro {
+        height: 90vh;
+        padding-right: 20px;
+    }
+
+    .practice-intro div {
+        width: 50%;
+    }
+
+    .practice-projects-content {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .practice-projects-count,
+    .practice-projects-text,
+    .practice-projects-image {
+        width: 100%;
+    }
+
+    .practice-projects-count {
+        margin-bottom: 30px;
+    }
+
+    .practice-outro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .practice-outro-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .practice h2 {
+        font-size: 2rem;
+    }
+
+    .practice h4 {
+        font-size: 3rem;
+    }
+
+    .practice p {
+        font-size: 1rem;
+    }
+
+    .practice-intro {
+        height: 70vh;
+        padding-right: 10px;
+    }
+
+    .practice-intro div {
+        width: 60%;
+    }
+
+    .practice-projects-content {
+        gap: 20px;
+    }
+
+    .practice-outro {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .practice h2 {
+        font-size: 1.8rem;
+    }
+
+    .practice h4 {
+        font-size: 2.5rem;
+    }
+
+    .practice p {
+        font-size: 0.9rem;
+    }
+
+    .practice-intro {
+        height: 50vh;
+        padding-right: 5px;
+    }
+
+    .practice-intro div {
+        width: 80%;
+    }
+
+    .practice-projects-content {
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .practice-outro {
+        padding: 10px;
+    }
+
+    .practice-outro-text {
+        font-size: 0.9rem;
+    }
 }

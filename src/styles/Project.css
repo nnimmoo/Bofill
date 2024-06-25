@@ -84,24 +84,17 @@ html {
 
 .project-button {
   position: fixed;
-
-  bottom: 0;
-  z-index: 1000;
-}
-
-.project-button {
-  font-family: SimpleMichael;
-  position: fixed;
   bottom: 10px;
   left: 50%;
   width: 80vw;
   font-size: 0.8vw;
   transform: translateX(-50%);
-  /* background-color: #333; */
   color: rgb(0, 0, 0);
   padding: 10px 20px;
   cursor: pointer;
   text-align: center;
+  font-family: SimpleMichael;
+  z-index: 1000;
 }
 
 .project-details {
@@ -120,9 +113,93 @@ html {
   transition: transform 0.8s ease-in-out;
   font-family: Montserrat;
   text-align: justify;
-
 }
 
 .project-details.show {
   transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .project h1 {
+    font-size: 48px;
+  }
+
+  .project h2 {
+    font-size: 48px;
+    left: calc(50% + 20vw);
+  }
+
+  .project>div {
+    width: 70vw;
+    height: 400px;
+  }
+
+  .project-button {
+    width: 90vw;
+    font-size: 1vw;
+  }
+
+  .project-details {
+    height: 60vh;
+    width: 80%;
+    left: calc(50% - 40%);
+    right: calc(50% - 40%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project h1 {
+    font-size: 36px;
+  }
+
+  .project h2 {
+    font-size: 36px;
+    left: calc(50% + 10vw);
+  }
+
+  .project>div {
+    width: 90vw;
+    height: 300px;
+  }
+
+  .project-button {
+    width: 95vw;
+    font-size: 1.2vw;
+  }
+
+  .project-details {
+    height: 70vh;
+    width: 90%;
+    left: calc(50% - 45%);
+    right: calc(50% - 45%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project h1 {
+    font-size: 28px;
+  }
+
+  .project h2 {
+    font-size: 28px;
+    left: 10%;
+  }
+
+  .project>div {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-button {
+    width: 100%;
+    font-size: 2vw;
+  }
+
+  .project-details {
+    height: 80vh;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+  }
 }

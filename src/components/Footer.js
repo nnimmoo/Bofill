@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Footer.css'; // Adjust the path to your CSS file
+import '../styles/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -23,13 +23,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-
-                <a>@nnimmoo</a>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie</a></li>
                     <li><Link to="/credits">Photo Credits</Link></li>
                 </ul>
+                <a>@nnimmoo</a>
+
             </div>
         </footer>
     );

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
-import menuLogo from "../assets/images/noun-hamburger-menu-896392.png"
+import menuLogo from "../assets/images/noun-hamburger-menu-896392.png";
+
 function Header() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);

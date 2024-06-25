@@ -19,15 +19,45 @@
     transition: transform .7s ease-in-out;
 }
 
-
 .header img:hover {
     transform: rotate(270deg);
 }
 
 .show {
     top: 0;
-  }
-  
+}
+
 .hide {
-    top: -100px; /* Adjust based on the header's height */
-  }
+    top: -100px;
+    /* Adjust based on the header's height */
+}
+
+@media screen and (max-width: 840px) {
+    .header {
+        width: 90vw;
+        font-size: 18px;
+        right: 0;
+        left: 0;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .header img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 99vw;
+        font-size: 16px;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .header img {
+        width: 40px;
+    }
+}

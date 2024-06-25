@@ -71,10 +71,9 @@ const Practice = () => {
                     </div>
                 </section>
 
-                {/* Last part with the map */}
+
                 <div className="practice-part">
                     <h2>GIVING SHAPE TO A CHANGING WORLD</h2>
-                    {/* <MapChart /> */}
                 </div>
             </div>
             <Footer />

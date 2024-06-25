@@ -10,6 +10,8 @@
     justify-content: flex-end;
     font-size: 20px;
     border-bottom: 1px solid black;
+    /* margin-top: 100px; */
+
 }
 
 .header-part {
@@ -30,18 +32,14 @@
     border-bottom: 0.1px solid black;
 }
 
-
 .sticky-nav a {
     padding: 5px 10px 2px 10px;
     margin: 6px;
     background-image: linear-gradient(#000 0 0);
     background-position: 0 100%;
-
     background-size: 0% 2px;
     background-repeat: no-repeat;
-    transition:
-        background-size 0.3s,
-        background-position 0s 0.3s;
+    transition: background-size 0.3s, background-position 0s 0.3s;
 }
 
 .sticky-nav a:hover {
@@ -73,8 +71,6 @@
     display: block;
 }
 
-
-
 .list-item .overlay {
     position: absolute;
     top: 0;
@@ -96,4 +92,81 @@
 
 .list-item:hover .overlay {
     opacity: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .sticky-nav {
+        height: auto;
+        margin-top: 100px;
+        font-size: 18px;
+    }
+
+    .sticky-nav div {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .sticky-nav a {
+        font-size: 16px;
+        margin: 4px 0;
+    }
+
+    .list-container {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .list-item {
+        width: calc(50% - 15px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sticky-nav {
+        font-size: 16px;
+    }
+
+    .sticky-nav div {
+        padding: 0 10px;
+    }
+
+    .sticky-nav a {
+        font-size: 14px;
+    }
+
+    .list-container {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .list-item {
+        width: calc(100% - 10px);
+    }
+
+    .list-item .overlay {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sticky-nav {
+        font-size: 14px;
+    }
+
+    .sticky-nav a {
+        font-size: 12px;
+    }
+
+    .list-container {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .list-item .overlay {
+        font-size: 16px;
+        padding: 2px;
+    }
 }

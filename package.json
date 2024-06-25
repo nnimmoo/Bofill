@@ -15,6 +15,7 @@
     "axios": "^1.6.8",
     "fbjs": "^3.0.5",
     "framer-motion": "^11.0.14",
+    "lenis": "^1.1.4",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
